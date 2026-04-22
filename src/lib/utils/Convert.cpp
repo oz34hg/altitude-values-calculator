@@ -35,3 +35,31 @@ float Convert::k_to_f(float kelvin){
     float converted_value = (kelvin - 273.15f) * (9.0f / 5.0f) + 32.0f;
     return converted_value;
 }
+
+// convert feet to meters 
+float Convert::feet_to_meters(float feet){
+    float converted_value = feet * 0.3048f;
+    return converted_value;
+}
+
+// convert meters to feet
+float Convert::meters_to_feet(float meters){
+    float converted_value = meters * 3.28084f;
+    return converted_value;
+}
+
+// convert kilometers to miles
+float Convert::km_to_miles(float km){
+    float converted_value = km * 0.621371f;
+    return converted_value;
+}
+
+// convert miles to kilometers
+float Convert::miles_to_km(float miles){
+    float converted_value = miles * 1.60934f;
+    return converted_value;
+}
+
+
+
+
